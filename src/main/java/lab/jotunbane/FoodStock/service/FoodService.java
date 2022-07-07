@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 public class FoodService {
 
-    @Autowired
+
     private FoodRepository foodRepository;
 
     public List<Food> list() {
@@ -23,7 +23,7 @@ public class FoodService {
 
     public void addFood(Food food) {
         foodRepository.save(food);
-        System.out.println("Added: "+ food.toString());
+        System.out.println("Added: "+ food);
     }
 
 
