@@ -12,27 +12,27 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScan(basePackages = {"configuration", "services"})
-@EnableJpaRepositories("repositories")
+@ComponentScan(basePackages = {"lab.jotunbane.FoodStock.configuration", "lab.jotunbane.FoodStock.service"})
+@EnableJpaRepositories("lab.jotunbane.FoodStock.repository")
 public class SpringConfig {
-    @Bean
-    public DataSource getDataSource(){
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/Foodstock");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("IT123");
-
-        return dataSource;
-    }
-
-    @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory(){
-        LocalContainerEntityManagerFactoryBean entityManager = new LocalContainerEntityManagerFactoryBean();
-        entityManager.setDataSource(getDataSource());
-        entityManager.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-        entityManager.setPackagesToScan("lab.jotunbane.FoodStock.model");
-
-        return entityManager;
-    }
+//    @Bean
+//    public DataSource getDataSource(){
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//        dataSource.setDriverClassName("org.postgresql.Driver");
+//        dataSource.setUrl("jdbc:postgresql://localhost:5432/Foodstock");
+//        dataSource.setUsername("postgres");
+//        dataSource.setPassword("IT123");
+//
+//        return dataSource;
+//    }
+//
+//    @Bean
+//    public LocalContainerEntityManagerFactoryBean entityManagerFactory(){
+//        LocalContainerEntityManagerFactoryBean entityManager = new LocalContainerEntityManagerFactoryBean();
+//        entityManager.setDataSource(getDataSource());
+//        entityManager.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+//        entityManager.setPackagesToScan("lab.jotunbane.FoodStock.model");
+//
+//        return entityManager;
+//    }
 }

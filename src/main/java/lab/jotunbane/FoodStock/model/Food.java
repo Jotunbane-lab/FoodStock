@@ -10,7 +10,6 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "Food")
 @Table(name = "food")
@@ -30,7 +29,7 @@ public class Food {
             name = "id",
             updatable = false
     )
-    private long id;
+    private Long id;
     @Column(
             name = "name",
             nullable = false
@@ -45,4 +44,10 @@ public class Food {
             name = "unit"
     )
     private String unit;
+
+    public Food(String name, int quantity, String unit) {
+        this.name = name;
+        this.quantity = quantity;
+        this.unit = unit;
+    }
 }
