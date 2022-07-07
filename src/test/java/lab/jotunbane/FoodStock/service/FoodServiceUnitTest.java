@@ -1,6 +1,6 @@
-package lab.jotunbane.FoodStock.services;
+package lab.jotunbane.FoodStock.service;
 
-import lab.jotunbane.FoodStock.models.Food;
+import lab.jotunbane.FoodStock.model.Food;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

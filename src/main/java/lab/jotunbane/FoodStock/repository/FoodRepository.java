@@ -1,6 +1,6 @@
-package lab.jotunbane.FoodStock.repositories;
+package lab.jotunbane.FoodStock.repository;
 
-import lab.jotunbane.FoodStock.models.Food;
+import lab.jotunbane.FoodStock.model.Food;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

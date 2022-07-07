@@ -1,7 +1,7 @@
-package lab.jotunbane.FoodStock.services;
+package lab.jotunbane.FoodStock.service;
 
-import lab.jotunbane.FoodStock.models.Food;
-import lab.jotunbane.FoodStock.repositories.FoodRepository;
+import lab.jotunbane.FoodStock.model.Food;
+import lab.jotunbane.FoodStock.repository.FoodRepository;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 public class FoodService {
 
-
+    @Autowired
     private FoodRepository foodRepository;
 
     public List<Food> list() {

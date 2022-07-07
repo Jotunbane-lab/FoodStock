@@ -1,4 +1,4 @@
-package lab.jotunbane.FoodStock.models;
+package lab.jotunbane.FoodStock.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

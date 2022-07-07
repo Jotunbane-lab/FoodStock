@@ -12,7 +12,7 @@
 	<artifactId>FoodStock</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>FoodStock</name>
-	<description>simple food stock trackej</description>
+	<description>simple food stock tracker</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
@@ -26,11 +26,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+<!--		<dependency>-->
+<!--			<groupId>com.h2database</groupId>-->
+<!--			<artifactId>h2</artifactId>-->
+<!--			<scope>runtime</scope>-->
+<!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>6.1.1.Final</version>
+			<type>pom</type>
 		</dependency>
+
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
